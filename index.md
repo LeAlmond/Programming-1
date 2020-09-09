@@ -4,26 +4,40 @@ You can use the [editor on GitHub](https://github.com/LeAlmond/Programming-1/edi
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+### Lab 2
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+In lab 2 we focused mainly on comparing values to other values and returning a variety of other values
 
 ```markdown
-Syntax highlighted code block
+#include <stdio.h>
 
-# Header 1
-## Header 2
-### Header 3
+int main()
+{
+        int m = 40,  n = 10, v1 = 13, v2 =67;
+        int n1, n2, n3;
 
-- Bulleted
-- List
+        printf("%s","Enter the first Number ");
+        scanf("%i",&n1);
 
-1. Numbered
-2. List
+        printf("%s","Enter the second Number ");
+        scanf("%i",&n2);
 
-**Bold** and _Italic_ and `Code` text
+        printf("%s","Enter the third Number ");
+        scanf("%i",&n3);
 
-[Link](url) and ![Image](src)
+        if (n1 + n2 == v1)
+        {
+                if (n3 <= v2)
+                {
+                        m = m - n;
+                }
+
+        }
+
+        printf("%i\n",m);
+
+        return 0;
+}
 ```
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
