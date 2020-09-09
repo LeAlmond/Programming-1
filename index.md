@@ -78,5 +78,86 @@ int main()
 }
 ```
 
+### Excercise 7
+```markdown
+#include <stdio.h>
+
+int main()
+{
+        int a1, a2, a3, a = 30;
+
+        printf("%s","Enter the first age ");
+        scanf("%i",&a1);
+
+        printf("%s","Enter the second age ");
+        scanf("%i",&a2);
+
+        printf("%s","Enter the third age ");
+        scanf("%i",&a3);
+
+        if (a1 > a)
+        {
+                if (a2 > a)
+                {
+                        if (a3 > a)
+                        {
+                                printf("%s\n","Green");
+                        }
+                        else
+                        {
+                                printf("%s\n","Blue" );
+                        }
+                }
+                else
+                {
+                        printf("%s\n","Blue" );
+                }
+        }
+        else
+        {
+                printf("%s\n","Blue" );
+        }
+
+        return 0;
+}
+```
+
 For more details see [Lab 2](https://github.com/LeAlmond/Programming-1/tree/master/Lab%202).
 
+### Lab 3
+
+In lab 3 we focused mainly on doing a bit more maths with some variation to mix things up a bit.  The restrictions whilst doing this lab were as listed below
+
+ - No And
+ - No Or
+ - No NotEqual
+
+### Exercise 1
+
+Ask the user for a number k. if k exceeds 26, then display “Blue”.
+```markdown
+#include <stdio.h>
+
+int main()
+{
+        int a1;
+        float p1, p = 38.20;
+
+        printf("%s","Enter item price ");
+        scanf("%f",&p1 );
+
+        printf("%s","Enter item number ");
+        scanf("%i",&a1 );
+
+        if (a1 > 18) {
+
+                printf("%s %.2f\n","$",p1 + p);
+        }
+
+        return 0;
+}
+```
+
+For more details see [Lab 3](https://github.com/LeAlmond/Programming-1/tree/master/Lab%203).
+
+For more details see [Lab 4](https://github.com/LeAlmond/Programming-1/tree/master/Lab%204).
