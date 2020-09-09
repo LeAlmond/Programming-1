@@ -10,7 +10,7 @@ In lab 1 we covered the basic's of doing math in C. This consisted of some basic
  - No Or
  - No NotEqual
  
- #### Excercise 1
+ ### Excercise 1
  ```markdown
 #include <stdio.h>
 
@@ -45,7 +45,7 @@ In lab 2 we focused mainly on comparing values to other values and returning a v
  - No Or
  - No NotEqual
 
-#### Excercise 6
+### Excercise 6
 ```markdown
 #include <stdio.h>
 
