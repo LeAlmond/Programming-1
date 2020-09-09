@@ -14,7 +14,7 @@ In lab 1 we covered the basic's of doing math in C. This consisted of some basic
  
 > Allow a user to enter a value as GCT and a item price, then calculate the total GCT and Total Price of the item.
 
- ```c
+ ```markdown
 #include <stdio.h>
 
 int main()
