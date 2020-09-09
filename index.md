@@ -14,7 +14,7 @@ In lab 1 we covered the basic's of doing math in C. This consisted of some basic
  
 > Allow a user to enter a value as GCT and a item price, then calculate the total GCT and Total Price of the item.
 
- ```markdown
+ ```c
 #include <stdio.h>
 
 int main()
@@ -52,7 +52,7 @@ In lab 2 we focused mainly on comparing values to other values and returning a v
 
 > Set k to 105.10. Ask the user for two item prices. If they (the prices) are different increase k by 10.20, otherwise decrease k by 29.25. Display the final k.
 
-```markdown
+```c
 #include <stdio.h>
 
 int main()
@@ -88,7 +88,7 @@ int main()
 
 > Ask the user for three ages. If all the ages exceed 30, then display “Green” otherwise display “Blue”.
 
-```markdown
+```c
 #include <stdio.h>
 
 int main()
@@ -145,7 +145,7 @@ In lab 3 we focused mainly on doing a bit more maths with some variation to mix 
 
 > Ask the user for the price of and number of an item, if the number of the item is greater than 18 add 38.20
 
-```markdown
+```c
 #include <stdio.h>
 
 int main()
@@ -171,7 +171,7 @@ int main()
 
 > Allow a user to enter 3 values and calulate wether or not the value is a multiple of 3.If all the values are multiples of 3 print "Yep" if the second number is not a multiple of 3 print "no sah", if the first number is not a multiple of 3 print "could be"
 
-```markdown
+```c
 #include <stdio.h>
 
 int main()
@@ -214,7 +214,7 @@ In lab 4 we focused on doing the same general things as in lab 3 but with a few 
 
 > Ask the user to enter two age's, and return "Same" if the two ages are the same, reutrn "Different" if they are not the same.
 
-```markdown
+```c
 #include <stdio.h>
 
 int main()
@@ -249,7 +249,7 @@ int main()
 
 > Ask the user to enter 3 age's, and return the eldest.
 
-```markdown
+```c
 #include <stdio.h>
 
 int main()
