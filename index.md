@@ -10,7 +10,7 @@ In lab 1 we covered the basic's of doing math in C. This consisted of some basic
  - No Or
  - No NotEqual
  
- ### Excercise 1
+### Excercise 1
  
  Allow a user to enter a value as GCT and a item price, then calculate the total GCT and Total Price of the item.
  ```markdown
