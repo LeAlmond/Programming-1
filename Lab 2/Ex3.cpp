@@ -2,7 +2,8 @@
 
 int main()
 {
-        int a1, a2, a3, a = 50;
+        int a1, a2, a3, a;
+        a = 50;
 
         printf("%s","Enter the first age ");
         scanf("%i",&a1);

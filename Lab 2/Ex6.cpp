@@ -2,8 +2,11 @@
 
 int main()
 {
-        float k = 105.10, d = 29.25, i = 10.20;
+        float k , d , i;
         float p1, p2;
+        k = 105.10;
+        d = 29.25;
+        i = 10.20;
 
         printf("%s","Enter the first Price ");
         scanf("%f",&p1);

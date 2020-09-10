@@ -2,8 +2,12 @@
 
 int main()
 {
-        int m = 40,  n = 10, v1 = 13, v2 =67;
+        int m ,  n , v1 , v2;
         int n1, n2, n3;
+        m = 40;
+        n = 10;
+        v1 = 13;
+        v2 =67;
 
         printf("%s","Enter the first Number ");
         scanf("%i",&n1);

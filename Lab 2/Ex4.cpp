@@ -2,8 +2,11 @@
 
 int main()
 {
-        int n1, n2, v1 = 34, v2 = 87;
-        int h = 12;
+        int n1, n2, v1, v2;
+        int h;
+        v1 = 34;
+        v2 = 87;
+        h = 12;
 
         printf("%s","Enter the first Price ");
         scanf("%i",&n1);

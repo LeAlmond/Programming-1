@@ -3,7 +3,8 @@
 int main()
 {
         int a1;
-        float p1, p = 38.20;
+        float p1, p;
+        p = 38.20;
 
         printf("%s","Enter item price ");
         scanf("%f",&p1 );

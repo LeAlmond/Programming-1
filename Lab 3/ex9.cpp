@@ -15,12 +15,11 @@ int main()
                         if (degrees <= 120) {
                                 printf("Hot");
                         }
+                        else {
+                                printf("Very Hot");
+                        }
                 }
                 else printf("Not Applicable");
-
-                if (degrees >= 121) {
-                        printf("Very Hot");
-                }
         }
         else  {
                 printf("Not Applicable");
