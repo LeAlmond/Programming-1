@@ -2,8 +2,9 @@
 
 int main()
 {
-        float y = 1;
-        float x = 1;
+        float y, x;
+        x = 1;
+        y = 1;
 
         printf("%s","Enter GCT Percent ");
         scanf("%f\n",&x);
