@@ -5,6 +5,7 @@ int main()
         int items;
         float price, discount;
         price = 80.05;
+        discount = 1;
 
         printf("%s", "Enter an Price " );
         scanf("%i",&items);
@@ -19,8 +20,9 @@ int main()
                 else {
                         discount = .9185;
                 }
-                price = price * discount;
-                printf("Final Price is $%.2f", price);
         }
+        price = price * discount;
+        printf("Final Price is $%.2f", price);
+
         return 0;
 }
