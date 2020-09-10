@@ -20,9 +20,9 @@ int main()
                 else {
                         discount = .9185;
                 }
+                price = price * discount;
+                printf("Final Price is $%.2f", price);
         }
-        price = price * discount;
-        printf("Final Price is $%.2f", price);
 
         return 0;
 }
