@@ -98,7 +98,8 @@ int main()
 
 int main()
 {
-        int a1, a2, a3, a = 30;
+        int a1, a2, a3, a;
+        a = 30;
 
         printf("%s","Enter the first age ");
         scanf("%i",&a1);
@@ -156,7 +157,8 @@ In lab 3 we focused mainly on doing a bit more math's with some variation to mix
 int main()
 {
         int a1;
-        float p1, p = 38.20;
+        float p1, p;
+        p = 38.20;
 
         printf("%s","Enter item price ");
         scanf("%f",&p1 );
