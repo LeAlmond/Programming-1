@@ -4,14 +4,14 @@ Here I will be posting completed labs and basic explanations for the labs that h
 
 ## Lab 1
 
-In lab 1 we covered the basic's of doing math in C. This consisted of some basic addition, subtration, division and multiplications. The restrictions whilst doing this lab were as listed below
+In lab 1 we covered the basic's of doing math in C. This consisted of some basic addition, subtraction, division and multiplications. The restrictions whilst doing this lab were as listed below
 
  * No And
  * No Or
  * No NotEqual
- 
+
 #### Excercise 1
- 
+
 > Allow a user to enter a value as GCT and a item price, then calculate the total GCT and Total Price of the item.
 
  ```c
@@ -19,8 +19,9 @@ In lab 1 we covered the basic's of doing math in C. This consisted of some basic
 
 int main()
 {
-        float y = 1;
-        float x = 1;
+        float y, x;
+        x = 1;
+        y = 1;
 
         printf("%s","Enter GCT Percent ");
         scanf("%f\n",&x);
@@ -57,8 +58,12 @@ In lab 2 we focused mainly on comparing values to other values and returning a v
 
 int main()
 {
-        int m = 40,  n = 10, v1 = 13, v2 =67;
+        int m, n, v1, v2;
         int n1, n2, n3;
+        m = 40 ;
+        n = 10;
+        v1 = 13;
+        v2 =67;
 
         printf("%s","Enter the first Number ");
         scanf("%i",&n1);
@@ -135,7 +140,7 @@ For more details see [Lab 2](https://github.com/LeAlmond/Programming-1/tree/mast
 
 ## Lab 3
 
-In lab 3 we focused mainly on doing a bit more maths with some variation to mix things up a bit.  The restrictions whilst doing this lab were as listed below
+In lab 3 we focused mainly on doing a bit more math's with some variation to mix things up a bit.  The restrictions whilst doing this lab were as listed below
 
  * No And
  * No Or
@@ -169,7 +174,7 @@ int main()
 ```
 #### Exercise 4++
 
-> Allow a user to enter 3 values and calulate wether or not the value is a multiple of 3.If all the values are multiples of 3 print "Yep" if the second number is not a multiple of 3 print "no sah", if the first number is not a multiple of 3 print "could be"
+> Allow a user to enter 3 values and calculate wether or not the value is a multiple of 3.If all the values are multiples of 3 print "Yep" if the second number is not a multiple of 3 print "no sah", if the first number is not a multiple of 3 print "could be"
 
 ```c
 #include <stdio.h>
@@ -209,10 +214,10 @@ In lab 4 we focused on doing the same general things as in lab 3 but with a few 
  * No NotEqual
  * No Equal
  * No Math(excluding Greater than, Less Than)
- 
+
 #### Excercise 1
 
-> Ask the user to enter two age's, and return "Same" if the two ages are the same, reutrn "Different" if they are not the same.
+> Ask the user to enter two age's, and return "Same" if the two ages are the same, return "Different" if they are not the same.
 
 ```c
 #include <stdio.h>
