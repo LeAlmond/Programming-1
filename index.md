@@ -41,7 +41,7 @@ int main()
 
 For more details see
 ---
-[Lab 1](https://github.com/LeAlmond/Programming-1/tree/master/Lab%201).
+[Lab 1](https://github.com/LeAlmond/Programming-1/tree/master/Lab%201)
 ---
 ## Lab 2
 
@@ -141,7 +141,7 @@ int main()
 
 For more details see
 ---
-[Lab 2](https://github.com/LeAlmond/Programming-1/tree/master/Lab%202).
+[Lab 2](https://github.com/LeAlmond/Programming-1/tree/master/Lab%202)
 ---
 ## Lab 3
 
@@ -211,7 +211,7 @@ int main()
 
 For more details see
 ---
-[Lab 3](https://github.com/LeAlmond/Programming-1/tree/master/Lab%203).
+[Lab 3](https://github.com/LeAlmond/Programming-1/tree/master/Lab%203)
 ---
 ## Lab 4
 
@@ -318,5 +318,5 @@ int main()
 
 For more details see
 ---
-[Lab 4](https://github.com/LeAlmond/Programming-1/tree/master/Lab%204).
+[Lab 4](https://github.com/LeAlmond/Programming-1/tree/master/Lab%204)
 ---
