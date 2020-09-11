@@ -290,24 +290,24 @@ int main()
         return 0;
 }
 ```
-#### Excercise 3
-
-Ask the user for 8 numbers. then display how many are above 20 (using a while loop)
-
-#### Excercise 4
-
-Ask the user for 7 numbers. display the total of all the numbers (using a while loop)
-
 #### Excercise 5
 
-Display the sum all odd numbers from 1 to 15 (using a while loop)
+> Ask the user for 8 numbers. then display how many are above 20 (using a while loop)
 
 #### Excercise 6
 
-Ask the user for a number b, then display the product of all numbers from 1 to b (using a while loop)
+> Ask the user for 7 numbers. display the total of all the numbers (using a while loop)
 
 #### Excercise 7
 
-Ask the user for 8 numbers. then display the smallest number (using a while loop)
+> Display the sum all odd numbers from 1 to 15 (using a while loop)
+
+#### Excercise 8
+
+> Ask the user for a number b, then display the product of all numbers from 1 to b (using a while loop)
+
+#### Excercise 9
+
+> Ask the user for 8 numbers. then display the smallest number (using a while loop)
 
 For more details see [Lab 4](https://github.com/LeAlmond/Programming-1/tree/master/Lab%204).
