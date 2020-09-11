@@ -64,9 +64,6 @@ int main()
 }
 ```
 
-For more details see
----
-[Lab 3](https://github.com/LeAlmond/Programming-1/tree/master/Lab%203)
----
+For more details see [Lab 3](https://github.com/LeAlmond/Programming-1/tree/master/Lab%203)
 
 [Home Page](./index.html)

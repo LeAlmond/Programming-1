@@ -35,9 +35,7 @@ int main()
 }
 ```
 
-For more details see
----
-[Lab 1](https://github.com/LeAlmond/Programming-1/tree/master/Lab%201)
----
+For more details see [Lab 1](https://github.com/LeAlmond/Programming-1/tree/master/Lab%201)
+
 
 [Home Page](./index.html)

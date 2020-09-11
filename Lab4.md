@@ -101,9 +101,6 @@ int main()
 
 > Ask the user for 8 numbers. then display the smallest number (using a while loop)
 
-For more details see
----
-[Lab 4](https://github.com/LeAlmond/Programming-1/tree/master/Lab%204)
----
+For more details see [Lab 4](https://github.com/LeAlmond/Programming-1/tree/master/Lab%204)
 
 [Home Page](./index.html)
