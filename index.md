@@ -4,6 +4,8 @@ Here I will be posting completed labs and basic explanations for the labs that h
 
 ## Lab 1
 
+[Lab 1 Page](./Lab1.html)
+
 In lab 1 we covered the basic's of doing math in C. This consisted of some basic addition, subtraction, division and multiplications. The restrictions whilst doing this lab were as listed below
 
  * No And
