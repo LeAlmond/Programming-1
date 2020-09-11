@@ -2,22 +2,21 @@
 
 int main()
 {
-        int items;
+        int guest;
         float price, additional;
         price = 450;
         additional = 0;
 
-        printf("%s", "Enter an Price " );
-        scanf("%i",&items);
+        printf("%s", "Enter Total Guest " );
+        scanf("%i",&guest);
 
-        if (items <= 12) {
-                additional = 45;
-        }
-        else if (items <= 17) {
-                additional = 35.50;
+        if (guest >= 12) {
+                if (guest <= 17) {
+                        additional = 35.50;
+                }
         }
         else {
-                additional = 0;
+                additional = 45;
         }
 
         price = price + additional;
