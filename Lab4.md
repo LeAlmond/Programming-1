@@ -105,3 +105,5 @@ For more details see
 ---
 [Lab 4](https://github.com/LeAlmond/Programming-1/tree/master/Lab%204)
 ---
+
+[Home Page](./index.html)
