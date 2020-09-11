@@ -39,8 +39,10 @@ int main()
 }
 ```
 
-For more details see [Lab 1](https://github.com/LeAlmond/Programming-1/tree/master/Lab%201).
-
+For more details see
+---
+[Lab 1](https://github.com/LeAlmond/Programming-1/tree/master/Lab%201).
+---
 ## Lab 2
 
 In lab 2 we focused mainly on comparing values to other values and returning a variety of other values.  The restrictions whilst doing this lab were as listed below
@@ -137,8 +139,10 @@ int main()
 }
 ```
 
-For more details see [Lab 2](https://github.com/LeAlmond/Programming-1/tree/master/Lab%202).
-
+For more details see
+---
+[Lab 2](https://github.com/LeAlmond/Programming-1/tree/master/Lab%202).
+---
 ## Lab 3
 
 In lab 3 we focused mainly on doing a bit more math's with some variation to mix things up a bit.  The restrictions whilst doing this lab were as listed below
@@ -205,8 +209,10 @@ int main()
 }
 ```
 
-For more details see [Lab 3](https://github.com/LeAlmond/Programming-1/tree/master/Lab%203).
-
+For more details see
+---
+[Lab 3](https://github.com/LeAlmond/Programming-1/tree/master/Lab%203).
+---
 ## Lab 4
 
 In lab 4 we focused on doing the same general things as in lab 3 but with a few more restrictions. The restrictions whilst doing this lab were as listed below
@@ -310,4 +316,7 @@ int main()
 
 > Ask the user for 8 numbers. then display the smallest number (using a while loop)
 
-For more details see [Lab 4](https://github.com/LeAlmond/Programming-1/tree/master/Lab%204).
+For more details see
+---
+[Lab 4](https://github.com/LeAlmond/Programming-1/tree/master/Lab%204).
+---
