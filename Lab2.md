@@ -6,6 +6,26 @@ In lab 2 we focused mainly on comparing values to other values and returning a v
  * No Or
  * No NotEqual
 
+#### Excercise 1
+
+> Ask the user for a number k. if k exceeds 26, then display “Blue”.
+
+#### Excercise 2
+
+> Ask the user for two item prices. If their total is not more than $100.74, then display “Orange”, otherwise display “Blue” then display “Green”.
+
+#### Excercise 3
+
+> Ask the user for three ages. If all ages are equal to 50 then display “Pencil”.
+
+#### Excercise 4
+
+> Set h to 12 then ask the user for two numbers. If the first number is not more than 34 and the second number exceeds 87 double h then increase h by 3. Otherwise triple h. Display the final h.
+
+#### Excercise 5
+
+> Let m equal to 40. Ask the user for three numbers. If the first two numbers are equal 13 and the third is not more than 67 then reduce m by 10. Display the final m.
+
 #### Excercise 6
 
 > Set k to 105.10. Ask the user for two item prices. If they (the prices) are different increase k by 10.20, otherwise decrease k by 29.25. Display the final k.
