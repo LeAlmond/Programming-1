@@ -26,30 +26,6 @@ In lab 1 we covered the basic's of doing math in C. This consisted of some basic
 
 > Allow a user to enter a value as GCT and a item price, then calculate the total GCT and Total Price of the item.
 
-```c
-#include <stdio.h>
-
-int main()
-{
-        float y, x;
-        x = 1;
-        y = 1;
-
-        printf("%s","Enter GCT Percent ");
-        scanf("%f\n",&x);
-
-        printf("%s","Enter a Price ");
-        scanf("%f\n",&y);
-
-        x= (y * (x/100));
-        y= (y + x);
-
-        printf("%s %.2f\n","Total GCT is $", x);
-        printf("%s %.2f\n","Your Total is $", y);
-
-        return 0;
-}
-```
 #### Excercise 4
 
 > Write a program that:
@@ -59,6 +35,31 @@ int main()
 (3) decreases k by the first weight
 (4) displays all three weights and k
 
+```c
+#include <stdio.h>
+
+int main()
+{
+        float w1, w2, w3, k;
+
+        printf("Enter the first weight\n");
+        scanf("%f", &w1);
+
+        printf("Enter the secong weight\n");
+        scanf("%f",&w2);
+
+        printf("Enter the third weight\n");
+        scanf("%f",&w3);
+
+        k = (w2 + w3) - w1;
+
+        printf("\nFirst weight: %.2f\nSecond weight: %.2f\nThird weight: %.2f\nk = %.2f", w1, w2, w3, k);
+
+        return 0;
+
+}
+```
+
 #### Excercise 5
 
 > Write a program that:
@@ -67,6 +68,30 @@ int main()
 (2) asks the user for two ages
 (3) increases m by the first age only if the second is lower than the first
 (4) displays m
+
+```c
+#include <stdio.h>
+
+int main()
+{
+        int m, a1, a2;
+        m = 40;
+
+        printf("Enter the first age\n");
+        scanf("%d", &a1);
+
+        printf("Enter the second age\n");
+        scanf("%d", &a2);
+
+        if(a1 > a2) {
+                m = m + a1;
+        }
+
+        printf("\nM = %d", m);
+
+        return 0;
+}
+```
 
 For more details see [Lab 1](https://github.com/LeAlmond/Programming-1/tree/master/Lab%201)
 
