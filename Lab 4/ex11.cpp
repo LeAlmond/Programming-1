@@ -4,9 +4,7 @@ int main()
 {
         int j, count, value;
         count = 1;
-
-        printf("Enter a number ");
-        scanf("%i", &j);
+        j = 1;
 
         while (j <= 7) {
                 count = 1;
