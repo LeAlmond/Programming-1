@@ -4,6 +4,7 @@ int main()
         int age;
         float cost;
         cost = 8;
+        
         printf("Enter an age ");
         scanf("%i", &age);
         if(age >= 10) {
