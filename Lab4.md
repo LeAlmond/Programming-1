@@ -106,6 +106,9 @@ int main()
 > Ask the user for a number j, then display j times table (upto12).
   eg. if j = 6 then we display 6x1=6, 6x2=12, 6x3=18..., 6x12=72
 
+#### Excercise 11
+> Ask the user for a number until it's valid (valid means it's a positive number)
+
 
 For more details see [Lab 4](https://github.com/LeAlmond/Programming-1/tree/master/Lab%204)
 
