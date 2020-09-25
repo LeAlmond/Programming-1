@@ -1,19 +1,16 @@
 #include <stdio.h>
-
 int main()
 {
         int total, count, num;
-        total = 0;
-        count = 0;
 
         printf("To stop the program enter -1\n");
         printf("Please enter a number ");
         scanf("%d", &num);
 
         while (num != -1) {
-                count = 0;
+                count = 1;
                 total = 0;
-                while (count < (num + 1)) {
+                while (count <= num) {
                         total = total + count;
                         count++;
                 }
@@ -21,6 +18,5 @@ int main()
                 printf("Please enter a number ");
                 scanf("%d", &num);
         }
-
         return 0;
 }
