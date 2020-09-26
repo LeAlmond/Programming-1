@@ -19,7 +19,6 @@ int main()
                         printf("Please enter a valid number\n");
                 }
         }
-
         printf("\nEncrypted key is %d %d %d %d\n",pass[0],pass[1],pass[2],pass[3]);
 
         return 0;
