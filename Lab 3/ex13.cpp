@@ -19,9 +19,10 @@ int main()
         }
 
         if (inr != 0) {
-          average = average/inr;
+                average = average/inr;
         }
-        
+
         printf("The average of the number of items that are within range is %.2f", average);
+
         return 0;
 }
