@@ -1,0 +1,27 @@
+START
+
+        DECLARE count = 0, in_range = 0 as int
+        DECLARE price, average = 0 as float
+
+        WHILE count < 7
+                DISPLAY "Enter the price of item "
+                accept price
+
+                IF price >= 105
+                        IF price <= 205
+                                average = average + price
+                                in_range = in_range + 1
+                        END IF
+                END IF
+
+                count = count + 1
+
+        END WHILE
+
+        IF in_range != 0
+                average = average/in_range
+        END IF
+
+        DISPLAY "The average of the items that are within range are ", average
+
+EMD

@@ -4,18 +4,24 @@
 int main()
 {
         int cnt = 0, inr = 0;
-        float price;
+        float price, average = 0;
 
         while (cnt < 7) {
                 printf("Enter the price of item %d ",(cnt+1));
                 scanf("%f", &price);
                 if (price >= 105) {
                         if (price <= 205) {
+                                average = average + price;
                                 inr++;
                         }
                 }
                 cnt++;
         }
-        printf("The total number of items that are within range are %d", inr);
+
+        if (inr != 0) {
+          average = average/inr;
+        }
+        
+        printf("The average of the number of items that are within range is %.2f", average);
         return 0;
 }
