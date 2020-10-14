@@ -8,6 +8,7 @@ int main()
         scanf("%d",&b);
 
         while (b != -1) {
+                sub = 0;
                 switch(b) {
                 case 7:
                         sub = -2.25;
@@ -21,15 +22,11 @@ int main()
                         sub = 12;
                         printf("12 has been added to the total\n");
                         break;
-                default:
-                        sub = 0;
-                        break;
                 }
+                q = q + sub;
                 printf("Enter a number ");
                 scanf("%d",&b);
-                q = q + sub;
         }
         printf("The total is %.2f", q);
-
         return 0;
 }
