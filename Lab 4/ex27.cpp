@@ -9,17 +9,11 @@ int main()
         dailywithdraw = withdraw + dailywithdraw;
 
         while (withdraw != -9 && dailywithdraw < 500) {
-                if (dailywithdraw < 501) {
-                  if (withdraw > 0) {
-                    dailywithdraw = withdraw + dailywithdraw;
+
                     printf("Enter amount to Withdraw\n");
                     scanf("%f",&withdraw);
+                    dailywithdraw = withdraw + dailywithdraw;
                   }
-                }
-                else {
-                  withdraw = -9;
-                }
-        }
         if (dailywithdraw > 500) {
           printf("Amount exceeds Max allowed'\n");
           dailywithdraw = dailywithdraw + (500 - dailywithdraw);
