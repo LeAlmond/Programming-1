@@ -1,23 +1,24 @@
 #include <stdio.h>
+int main(){
+  float withdrawalAmt = 0, totalAmt = 0;
 
-int main()
-{
-        float withdraw, dailywithdraw;
+  printf("Enter the amount you'd like to withdraw\nEnter -9 if you'd like to exit the ATM\n");
+  scanf("%f",&withdrawalAmt);
+  totalAmt = totalAmt + withdrawalAmt;
 
-        while (withdraw != -9) {
-                printf("Enter amount to Withdraw\n");
-                scanf("%f",&withdraw);
+  while(withdrawalAmt !=-9 && totalAmt < 500){
+    printf("Enter the amount you'd like to withdraw\nEnter -9 if you'd like to exit the ATM\n");
+    scanf("%f",&withdrawalAmt);
+    if((totalAmt + withdrawalAmt) > 500){
+      withdrawalAmt = -9;
+      totalAmt = totalAmt + withdrawalAmt;
+    }
+    else{
+      totalAmt = totalAmt + withdrawalAmt;
+    }
+  }
 
-                if ((withdraw + dailywithdraw) < 501) {
-                  if (withdraw > 0) {
-                    dailywithdraw = withdraw + dailywithdraw;
-                  }
-                }
-                else {
-                  printf("Amount exceeds Max allowed'\n");
-                  withdraw = -9;
-                }
-        }
-        printf("you have withdrawn $%.2f '\n", dailywithdraw);
-        return 0;
+  if(totalAmt > 500)
+    printf("Amount exceeds max allowed\n");
+  return 0;
 }
