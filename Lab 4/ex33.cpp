@@ -2,26 +2,25 @@
 
 int main()
 {
-        int a = 0, b = 1, row = 1;
+        int a = 0, b = 12, row = 1;
 
-        while (row < 5) {
+        while (row <= 3) {
                 while (a < b) {
                         printf("*");
                         a++;
                 }
                 printf("\n");
-                b = b + 3;
                 a = 0;
                 row++;
         }
-        while (row <= 10) {
-                a = b;
-                while (a > 0) {
+        while (row <= 8) {
+                while (a < b) {
                         printf("*");
-                        a--;
+                        a++;
                 }
                 printf("\n");
-                b = b - 3;
+                b = b - 1;
+                a = 0;
                 row++;
         }
         return 0;

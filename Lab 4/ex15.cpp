@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 int main()
 {
         int age, cnt = 1, pos = 0;
