@@ -9,14 +9,14 @@ int main()
                 if (values[cnt] > 19) {
                   greater++;
                 }
-                if (values[cnt] > largest) {
-                  largest = values[cnt];
-                }
                 cnt++;
         }
         while (cnt > 3) {
                 sum = sum + values[cnt];
                 cnt--;
+        }
+        for (cnt = 0; cnt <= 7; cnt++) {
+                largest = values[cnt];
         }
 
         printf("The sum of the last 4 elements is %.2f\n",sum);
