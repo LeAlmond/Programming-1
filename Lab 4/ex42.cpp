@@ -15,17 +15,50 @@ int main()
         cnt = 0;
 
         while (cnt < 10 ) {
+                cnt2 = cnt;
                 init = array1[cnt];
                 while (cnt2 < 10) {
-                  if (array1[cnt2] < init) {
-                    init = array1[cnt2];
+                  if (array1[cnt2] > init) {
+                    init = array1 [cnt2];
+                    array1 [cnt2] = array1 [cnt];
+                    array1 [cnt] = init;
                   }
                   cnt2++;
                 }
                 cnt++;
-
         }
 
+        cnt = 0;
+
+        while (cnt < 10 ) {
+                cnt2 = cnt;
+                init = array2[cnt];
+                while (cnt2 < 10) {
+                  if (array2[cnt2] > init) {
+                    init = array2 [cnt2];
+                    array2 [cnt2] = array2 [cnt];
+                    array2 [cnt] = init;
+                  }
+                  cnt2++;
+                }
+                cnt++;
+        }
+
+        cnt = 0;
+
+        while (cnt < 10 ) {
+                cnt2 = cnt;
+                init = array3[cnt];
+                while (cnt2 < 10) {
+                  if (array3[cnt2] > init) {
+                    init = array3 [cnt2];
+                    array3 [cnt2] = array3 [cnt];
+                    array3 [cnt] = init;
+                  }
+                  cnt2++;
+                }
+                cnt++;
+        }
 
         cnt = 0;
 

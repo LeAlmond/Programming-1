@@ -2,16 +2,18 @@
 
 int main()
 {
-        int cnt = 0, input;
+        int cnt = 0, input, total = 0;
 
-        while (cnt < 3 && (input < 23 or input > 33)) {
-            printf("Enter  number between 23-33\n");
+        while (input < 43 or input > 53) {
+            printf("Enter  number between 43-53\n");
             scanf("%d",&input);
+            cnt = input - 2;
+        }
+        while (cnt < 55) {
+            total = cnt + total;
             cnt++;
         }
-        if (input >= 23 && input <= 33) {
-          printf("Valid input entered\n");
-        }
+        printf("The total is %d\n", total);
 
         return 0;
 }

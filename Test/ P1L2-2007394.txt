@@ -1,0 +1,149 @@
+ID# 2007394
+NAME Gabriel Tickle Garcia
+
+Q1
+
+#include <stdio.h>
+
+int main()
+{
+        int a = 0, b = 9, row = 1;
+
+        while (row <= 5) {
+                while (a < b) {
+                        printf("*");
+                        a++;
+                }
+                printf("\n");
+                a = 0;
+                row++;
+        }
+        b = 3;
+        while (row <= 11) {
+                while (a < b) {
+                        printf("*");
+                        a++;
+                }
+                printf("\n");
+                b = b + 2;
+                a = 0;
+                row++;
+        }
+        return 0;
+}
+
+Q2
+
+#include <stdio.h>
+
+int main()
+{
+        int cnt = 0, input, total = 0;
+
+        while (input < 43 or input > 53) {
+            printf("Enter  number between 43-53\n");
+            scanf("%d",&input);
+            cnt = input - 2;
+        }
+        while (cnt <= 55) {
+            total = cnt + total;
+            cnt++;
+        }
+        printf("The total is %d\n", total);
+
+        return 0;
+}
+
+Q3 interpretation 1
+
+#include <stdio.h>
+
+int main()
+{
+        int array1[10] = {13, 14, 18, -9, 3, 14, 6, -7, 12, 14};
+        int array2[10] = {73, 74, 28, 4, 31, 4, 16, -8, 15, -4};
+        int array3[10] = {3};
+        int smol = 0, cnt = 0;
+
+        while (cnt < 10) {
+                array3[cnt] = smol;
+                smol+=4;
+                cnt++;
+        }
+
+
+        cnt = 10;
+
+        while (cnt >= 0) {
+                smol = array1[cnt];
+                if(array2[cnt] < smol) {
+                        smol = array2[cnt];
+                }
+                if(array3[cnt] < smol) {
+                        smol = array3[cnt];
+                }
+
+                printf("%d\t %d\t %d\t smallest value is %d\t\n", array1[cnt], array2[cnt], array3[cnt], smol);
+                cnt--;
+        }
+
+        return 0;
+}
+
+ Q3 interpretation 2
+
+#include <stdio.h>
+
+int main()
+{
+        int array1[10] = {13, 14, 18, -9, 3, 14, 6, -7, 12, 14};
+        int array2[10] = {73, 74, 28, 4, 31, 4, 16, -8, 15, -4};
+        int array3[10] = {3};
+        int max = 0, mid = 0, min = 0, cnt = 0;
+
+        while (cnt < 10 ) {
+                array3 [cnt + 1] = array3 [cnt] + 4;
+                cnt++;
+        }
+
+        cnt = 0;
+
+        while (cnt < 10 ) {
+                printf("%d, ",array3[cnt] );
+                cnt++;
+        }
+        printf("\n");
+
+        cnt = 0;
+
+        while (cnt < 10) {
+                max = array1[cnt];
+                mid = array1[cnt];
+                min = array1[cnt];
+
+                if(array2[cnt] > max) {
+                        max = array2[cnt];
+                }
+                if(array3[cnt] > max) {
+                        max = array3[cnt];
+                }
+                if(array2[cnt] < min) {
+                        min = array2[cnt];
+                }
+                if(array3[cnt] < min) {
+                        min = array3[cnt];
+                }
+
+                if(array2[cnt] < max && array2[cnt] > min) {
+                        mid = array2[cnt];
+                }
+                if(array3[cnt] < max && array3[cnt] > min) {
+                        mid = array3[cnt];
+                }
+
+                printf("%d\t %d\t %d\t \n", max, mid, min );
+                cnt++;
+        }
+
+        return 0;
+}
