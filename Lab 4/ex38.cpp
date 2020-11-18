@@ -2,53 +2,27 @@
 
 int main()
 {
-        int array1[10] = {13, 14, 18, -9, 3, 14, 6, -7, 12, 14};
-        int array2[10] = {73, 74, 28, 4, 31, 4, 16, -8, 15, -4};
-        int array3[10] = {3};
-        int init, cnt = 0, cnt2 = 0;
+        int array1[8] = {34, 56, 47, 47, 87, 87, 0, 45}, array2[8] = {14, 87, 24, 0, 0, 43, 112, 67}, init, cnt = 0;
 
-        while (cnt < 10 ) {
-                array3 [cnt + 1] = array3 [cnt] + 4;
+        while (cnt < 8 ) {
+                init = array1 [cnt];
+                array1 [cnt] = array2 [cnt];
+                array2 [cnt] = init;
                 cnt++;
         }
 
         cnt = 0;
-
-        while (cnt < 10 ) {
-                init = array1[cnt];
-                while (cnt2 < 10) {
-                  if (array1[cnt2] < init) {
-                    init = array1[cnt2];
-                  }
-                  cnt2++;
-                }
-                cnt++;
-
-        }
-
-
-        cnt = 0;
-
         printf("Array 1 is: ");
-        while (cnt < 10 ) {
+        while (cnt < 8 ) {
                 printf("%d,",array1[cnt]);
                 cnt++;
         }
-
         cnt = 0;
 
         printf("\nArray 2 is: ");
-        while (cnt < 10 ) {
+
+        while (cnt < 8 ) {
                 printf("%d,",array2[cnt]);
-                cnt++;
-        }
-
-        cnt = 0;
-
-        printf("\nArray 3 is: ");
-
-        while (cnt < 10 ) {
-                printf("%d,",array3[cnt]);
                 cnt++;
         }
 

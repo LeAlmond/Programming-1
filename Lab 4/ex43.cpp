@@ -25,7 +25,7 @@ int main()
                         smol = array3[cnt];
                 }
 
-                printf("%d\t %d\t %d\t smallest value %d\t\n", array1[cnt], array2[cnt], array3[cnt], smol);
+                printf("%d\t %d\t %d\t smallest value is %d\t\n", array1[cnt], array2[cnt], array3[cnt], smol);
                 cnt--;
         }
 
