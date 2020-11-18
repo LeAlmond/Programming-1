@@ -1,0 +1,1173 @@
+#include <stdio.h>
+
+int main()
+{
+        int a1, a2;
+
+        printf("%s","Enter first age ");
+        scanf("%i",&a1 );
+
+        printf("%s","Enter second age ");
+        scanf("%i",&a2 );
+
+        if (a1 > a2) {
+
+                printf("Different");
+        }
+
+        else if (a1 < a2 ) {
+
+                printf("Different");
+        }
+        else{
+
+                printf("Same");
+        }
+
+        return 0;
+}
+#include <stdio.h>
+
+int main()
+{
+        int a1, a2, a3, max;
+
+        printf("%s","Enter first age ");
+        scanf("%i",&a1 );
+
+        printf("%s","Enter second age ");
+        scanf("%i",&a2 );
+
+        printf("%s","Enter second age ");
+        scanf("%i",&a3 );
+
+        max = a1;
+
+        if (a2 > max) {
+
+                max = a2;
+        }
+
+        if (a3 > max) {
+
+                max = a3;
+
+        }
+
+        printf("Eldest %i",max );
+
+        return 0;
+}
+#include <stdio.h>
+
+int main()
+{
+        int a1, a2, a3, max;
+
+        printf("%s","Enter first age ");
+        scanf("%i",&a1 );
+
+        printf("%s","Enter second age ");
+        scanf("%i",&a2 );
+
+        printf("%s","Enter second age ");
+        scanf("%i",&a3 );
+
+        max = a1;
+
+        if (a2 > max) {
+
+          max = a2;
+        }
+
+        if (a3 > max) {
+
+          max = a3;
+
+        }
+
+        printf("Eldest %i",max );
+
+        return 0;
+}
+#include <stdio.h>
+
+int main()
+{
+        int guest;
+        float price, additional;
+        price = 450;
+        additional = 0;
+
+        printf("%s", "Enter Total Guest " );
+        scanf("%i",&guest);
+
+        if (guest >= 12) {
+                if (guest <= 17) {
+                        additional = 35.50;
+                }
+        }
+        else {
+                additional = 45;
+        }
+
+        price = price + additional;
+        printf("Final Price after Additional cost is $%.2f additional cost is $%.2f", price, additional);
+
+        return 0;
+}
+#include <stdio.h>
+
+int main()
+{
+        int number, greater, loop;
+        loop = 0;
+        greater = 0;
+
+        while (loop < 8 ) {
+                printf("%s", "Enter a numbers ");
+                scanf("%i",&number);
+                if (number > 20) {
+                        greater++;
+                }
+                loop++;
+        }
+        printf("the total amount of number's greater than 20 is %i\n", greater);
+        return 0;
+}
+#include <stdio.h>
+
+int main()
+{
+        int number, prev, count;
+        count = 0;
+        prev = 0;
+
+        while (count < 7 ) {
+                printf("Enter a numbers ");
+                scanf("%i",&number);
+                prev = prev + number;
+                count++;
+        }
+        printf("the total of all number's is %i\n", prev);
+        return 0;
+}
+#include <stdio.h>
+
+int main()
+{
+        int odd, count;
+        count = 1;
+        odd = 0;
+
+        while (count <= 15 ) {
+                odd = odd + count;
+                count+=2;
+        }
+        printf("The sum is %i\n", odd);
+        return 0;
+}
+#include <stdio.h>
+
+int main()
+{
+        int count, usercount, product;
+        count = 1;
+        usercount = 0;
+        product = 1;
+
+        printf("Enter a number ");
+        scanf("%i", &usercount);
+        while (count <= usercount) {
+                product = product * count;
+                count++;
+        }
+        printf("The sum is %i\n", product);
+        return 0;
+}
+#include <stdio.h>
+
+int main()
+{
+        int count, least, number;
+        count = 0;
+
+        printf("Enter a number ");
+        scanf("%i", &number);
+        least = number;
+        while (count < 7) {
+                scanf("%i", &number);
+                if (number <= least) {
+                        least = number;
+                }
+                count++;
+        }
+        printf("The smallest number is %i\n", least);
+        return 0;
+}
+#include <stdio.h>
+
+int main()
+{
+        int j, count, value;
+        count = 1;
+
+        printf("Enter a number ");
+        scanf("%i", &j);
+
+        while (count < 13) {
+          value = j * count;
+                printf("%d x %d = %d\n",j ,count, value);
+                count++;
+                }
+
+        return 0;
+}
+#include <stdio.h>
+
+int main()
+{
+        int j, count, value;
+        count = 1;
+        j = 1;
+
+        while (j <= 7) {
+                count = 1;
+                while (count < 12) {
+                        value = j * count;
+                        printf("%d x %d = %d, ",j,count, value);
+                        count++;
+                }
+                j++;
+                printf("\n \n");
+        }
+        return 0;
+}
+#include <stdio.h>
+
+int main()
+{
+        int age, total;
+        total = 0;
+
+        printf("To stop the program enter -1\n");
+        printf("Please enter an age ");
+        scanf("%d", &age);
+
+        while (age != -1) {
+                if (age > 15) {
+                        total++;
+                }
+                printf("Please enter an age ");
+                scanf("%d", &age);
+
+        }
+        printf("The user has entered a total of %d ages\n", total);
+
+        return 0;
+}
+#include <stdio.h>
+
+int main()
+{
+        int num;
+
+        printf("Enter a number ");
+        scanf("%d", &num);
+
+        while (num <= 0) {
+                printf("Enter a number ");
+                scanf("%d", &num);
+        }
+
+        printf("%d is a positive number", num);
+
+        return 0;
+}
+#include <stdio.h>
+
+int main()
+{
+        int total, count, num;
+
+        printf("To stop the program enter -1\n");
+        printf("Please enter a number ");
+        scanf("%d", &num);
+
+        while (num != -1) {
+                count = 1;
+                total = 0;
+                while (count <= num) {
+                        total = total + count;
+                        count++;
+                }
+                printf("The Total is %d\n", total);
+                printf("Please enter a number ");
+                scanf("%d", &num);
+        }
+        return 0;
+}
+#include <stdio.h>
+
+int main()
+{
+        int age, cnt = 1, pos = 0;
+
+        while (cnt <= 8 && age != -1)
+        {
+                printf("\nEnter age %d ",cnt);
+                scanf("%d",&age);
+                if (age == 10) {
+                        pos = cnt;
+                }
+                cnt++;
+        }
+        if (pos != 0) {
+                printf("The first ten was entered at position %d\n", pos);
+        }
+        else{
+                printf("wasn't there\n");
+        }
+        return 0;
+}
+#include <stdio.h>
+int main()
+{
+        int num, cnt = 0, pass[4];
+
+        while (cnt < 4)
+        {
+                printf("Enter digit %d of your 4 digit pass code ", (cnt + 1));
+                scanf("%d",&num);
+
+                if (num < 10) {
+                        if (num >= 5) {
+                                num = 9 - num;
+                        }
+                        pass[cnt] = num;
+                        cnt++;
+                }
+                else{
+                        printf("Please enter a valid number\n");
+                }
+        }
+        printf("\nEncrypted key is %d %d %d %d\n",pass[0],pass[1],pass[2],pass[3]);
+
+        return 0;
+}
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+        int age, max;
+        char mname[30], name[30];
+
+        printf("\nEnter a Name ");
+        scanf("%s",name);
+
+        printf("\nEnter an age ");
+        scanf("%d",&age);
+
+        max = age;
+        strcpy (mname,name);
+
+        while (age != -1)
+        {
+                printf("\nEnter a Name ");
+                scanf("%s",name);
+
+                if (age > max) {
+                        max = age;
+                        strcpy (mname,name);
+                }
+                printf("\nEnter an age ");
+                scanf("%d",&age);
+        }
+        printf("The eldest person is %d and there name is %s \n", max, mname);
+
+        return 0;
+}
+#include <stdio.h>
+
+int main()
+{
+        int num = 0, cnt = 0;
+
+        printf("\nEnter a number ");
+        scanf("%d",&num);
+
+        while (num != -1 && cnt < 7)
+        {
+                cnt++;
+                printf("\nEnter a number ");
+                scanf("%d",&num);
+        }
+
+        printf("A total of %d numbers were entered\n",cnt);
+
+        return 0;
+}
+#include <stdio.h>
+
+int main()
+{
+        int code = 0;
+        float  codeprice, price, totalprice;
+
+        printf("Enter a Price ");
+        scanf("%f",&price);
+        totalprice = price;
+
+        while (code != -1) {
+                printf("Enter a Price code from 1-4 ");
+                scanf("%d",&code);
+                switch(code){
+                      case 1:
+                            codeprice = 10.00;
+                            printf("$10 has been added to the total Price\n");
+                      break;
+                      case 2:
+                            codeprice = 15.50;
+                            printf("$15.50 has been added to the total Price\n");
+                            break;
+                      case 3:
+                            codeprice = -8.50;
+                            printf("$8.50 has been subtracted to the total Price\n");
+                            break;
+                      case 4:
+                            codeprice = 1.50;
+                            printf("$1.50 has been added to the total Price\n");
+                            break;
+                      default:
+                            codeprice = 0;
+                            printf("Please enter valid input\n");
+                            break;
+                    }
+            totalprice = totalprice + codeprice;
+        }
+        printf("The total price is $%.2f", totalprice);
+
+        return 0;
+}
+#include <stdio.h>
+
+int main()
+{
+        int b = 0;
+        float q = 12.25, sub = 0;
+
+        printf("Enter a number ");
+        scanf("%d",&b);
+
+        while (b != -1) {
+                sub = 0;
+                switch(b) {
+                case 7:
+                        sub = -2.25;
+                        printf("2.25 has been subtracted from the total\n");
+                        break;
+                case 3:
+                        sub = 10;
+                        printf("10 has been added to the total\n");
+                        break;
+                case 4:
+                        sub = 12;
+                        printf("12 has been added to the total\n");
+                        break;
+                }
+                q = q + sub;
+                printf("Enter a number ");
+                scanf("%d",&b);
+        }
+        printf("The total is %.2f", q);
+        return 0;
+}
+#include <stdio.h>
+
+int main()
+{
+        int m, count = 0, ir = 0;
+        float avg, n, q, ip, total;
+
+        printf("Enter a number ");
+        scanf("%d",&m);
+
+        printf("Enter a lower range Decimal ");
+        scanf("%f",&n);
+
+        printf("Enter an Upper range Decimal ");
+        scanf("%f",&q);
+
+        while (count < m) {
+                printf("Enter an item price ");
+                scanf("%f",&ip);
+                if (ip > n) {
+                        if (ip < q) {
+                                total = total + ip;
+                                ir++;
+                        }
+                }
+
+                count++;
+        }
+        if(ir != 0) {
+                avg = total / ir;
+                printf("The average of the number in range is %.2f", avg);
+        }
+        else {
+                printf("Nothing in range");
+        }
+        return 0;
+}
+#include <stdio.h>
+
+int main()
+{
+        int r1 = 0, r2  = 0, r3 = 0, r4 = 0, count = 0;
+        float score;
+
+        while (count < 8) {
+          printf("%s","Enter first Score ");
+          scanf("%f",&score );
+                if (score > 45) {
+                        if (score > 49.50) {
+                                if (score < 59.99) {
+                                        r2 = r2 + 1;
+                                }
+                                else {
+                                        if (score > 60){
+                                                if (score < 78){
+                                                        r3 = r3 + 1;
+                                                }
+                                                if (score > 90) {
+                                                        r4 = r4 + 1;
+                                                }
+                                        }
+                                }
+                        }
+                }
+                else{
+                        r1 = r1 + 1;
+                }
+                count++;
+        }
+
+        printf("Scores in Range 1 %i, Scores in Range 2 %i, Scores in Range 3 %i, Scores in Range 4 %i", r1, r2, r3, r4);
+
+        return 0;
+}
+#include <stdio.h>
+
+int main()
+{
+        int num = 0;
+
+        printf("Enter a number ");
+        scanf("%d",&num);
+
+        if(num % 4 == 0) {
+                if(num % 6 == 0) {
+                printf("Blue");
+              }
+              else{
+                printf("Green");
+              }
+        }
+        else {
+                printf("Green");
+        }
+        return 0;
+}
+#include <stdio.h>
+
+int main()
+{
+        int password = 0, attempt = 0, cpe =1234;
+
+        while (attempt < 5 && password != cpe) {
+                printf("Enter password\n");
+                scanf("%d",&password);
+                attempt++;
+        }
+        if (attempt != 5) {
+          printf("Access Granted\n");
+        }
+        else {
+          printf("You are locked out\n");
+        }
+
+        return 0;
+}
+#include <stdio.h>
+
+int main()
+{
+        float withdraw = 0, dailywithdraw = 0;
+
+        printf("Enter amount to Withdraw\n");
+        scanf("%f",&withdraw);
+        dailywithdraw = withdraw + dailywithdraw;
+
+        while (withdraw != -9 && dailywithdraw < 500) {
+                if (dailywithdraw < 501) {
+                  if (withdraw > 0) {
+                    dailywithdraw = withdraw + dailywithdraw;
+                    printf("Enter amount to Withdraw\n");
+                    scanf("%f",&withdraw);
+                  }
+                }
+                else {
+                  withdraw = -9;
+                }
+        }
+        if (dailywithdraw > 500) {
+          printf("Amount exceeds Max allowed'\n");
+          dailywithdraw = dailywithdraw + (500 - dailywithdraw);
+        }
+        printf("you have withdrawn $%.2f '\n", dailywithdraw);
+        return 0;
+}
+#include <stdio.h>
+
+int main()
+{
+        float withdrawalAmt = 0, totalAmt = 0;
+
+        printf("Enter the amount you'd like to withdraw\nEnter -9 if you'd like to exit the ATM\n");
+        scanf("%f",&withdrawalAmt);
+        totalAmt = totalAmt + withdrawalAmt;
+
+        while(withdrawalAmt !=-9 && totalAmt < 500) {
+                printf("Enter the amount you'd like to withdraw\nEnter -9 if you'd like to exit the ATM\n");
+                scanf("%f",&withdrawalAmt);
+                if((totalAmt + withdrawalAmt) > 500) {
+                        withdrawalAmt = -9;
+                        totalAmt = totalAmt + withdrawalAmt;
+                }
+                else{
+                        totalAmt = totalAmt + withdrawalAmt;
+                }
+        }
+
+        if(totalAmt > 500)
+                printf("Amount exceeds max allowed\n");
+        return 0;
+}
+#include <stdio.h>
+
+int main()
+{
+        float withdraw = 0, dailywithdraw = 0;
+
+        printf("Enter amount to Withdraw\n");
+        scanf("%f",&withdraw);
+        dailywithdraw = withdraw + dailywithdraw;
+
+        while (withdraw != -9 && dailywithdraw < 500) {
+
+                printf("Enter amount to Withdraw\n");
+                scanf("%f",&withdraw);
+                dailywithdraw = withdraw + dailywithdraw;
+        }
+        if (dailywithdraw > 500) {
+                printf("Amount exceeds Max allowed'\n");
+                dailywithdraw = dailywithdraw + (500 - dailywithdraw);
+        }
+        printf("you have withdrawn $%.2f '\n", dailywithdraw);
+        return 0;
+}
+#include <stdio.h>
+
+int main()
+{
+        int cnt = 0, cnt1 = 0;
+
+        while (cnt < 5 ) {
+                cnt1 = 0;
+                while (cnt1 < 6 ) {
+                        printf("*");
+                        cnt1++;
+                }
+                printf("*\n");
+                cnt++;
+        }
+        return 0;
+}
+#include <stdio.h>
+
+int main()
+{
+        int a = 0, b = 6;
+
+        while (b >= 0) {
+                a = (b * 2);
+                while (a > 1) {
+                        printf("*");
+                        a--;
+                }
+                printf("\n");
+                b--;
+        }
+        return 0;
+}
+#include <stdio.h>
+
+int main()
+{
+        int a = 0, b = 1, row = 1;
+
+        while (row < 5) {
+                while (a < b) {
+                        printf("*");
+                        a++;
+                }
+                printf("\n");
+                b = b + 3;
+                a = 0;
+                row++;
+        }
+        while (row <= 10) {
+                a = b;
+                while (a > 0) {
+                        printf("*");
+                        a--;
+                }
+                printf("\n");
+                b = b - 3;
+                row++;
+        }
+        return 0;
+}
+#include <stdio.h>
+
+int main()
+{
+        int a = 0, b = 2, row = 1;
+
+        while (row <= 5) {
+                while (a < b) {
+                        printf("*");
+                        a++;
+                }
+                printf("\n");
+                b = b + 3;
+                a = 0;
+                row++;
+        }
+        while (row <= 8) {
+                while (a < b) {
+                        printf("*");
+                        a++;
+                }
+                printf("\n");
+                a = 0;
+                row++;
+        }
+        return 0;
+}
+#include <stdio.h>
+
+int main()
+{
+        int a = 1, b = 0, c = 1;
+
+        while (c <= 6) {
+                while (a <= 12) {
+                        b = c * a;
+                        printf("%d x %d = %d\n", c, a, b);
+                        a++;
+                }
+                a = 1;
+                c++;
+        }
+        printf("\n");
+        return 0;
+}
+#include <stdio.h>
+
+int main()
+{
+        int a = 0, b = 12, row = 1;
+
+        while (row <= 3) {
+                while (a < b) {
+                        printf("*");
+                        a++;
+                }
+                printf("\n");
+                a = 0;
+                row++;
+        }
+        while (row <= 8) {
+                while (a < b) {
+                        printf("*");
+                        a++;
+                }
+                printf("\n");
+                b = b - 1;
+                a = 0;
+                row++;
+        }
+        return 0;
+}
+#include <stdio.h>
+
+int main()
+{
+        int cnt = 2, k;
+        float itemprice = 0, lowest = 0;
+
+        printf("Please Enter a Value ");
+        scanf("%d", &k);
+
+        while (k != -1) {
+                cnt = 2;
+                printf("Please enter price for item 1 $");
+                scanf("%f", &itemprice);
+                lowest = itemprice;
+
+                while (cnt <= k) {
+                        printf("Please enter price for item %d $",cnt);
+                        scanf("%f", &itemprice);
+                        if (lowest > itemprice) {
+                                lowest = itemprice;
+                        }
+                        cnt++;
+                }
+                printf("The lowest item price is $%.2f \n",lowest);
+                printf("Please Enter a Value ");
+                scanf("%d", &k);
+        }
+        return 0;
+}
+#include <stdio.h>
+
+int main()
+{
+        int cnt = 0, greater = 0;
+        float sum, largest = 0, values[7];
+
+        while (cnt < 7) {
+                printf("Enter a Value ");
+                scanf("%f",&values[cnt]);
+                if (values[cnt] > 19) {
+                  greater++;
+                }
+                if (values[cnt] > largest) {
+                  largest = values[cnt];
+                }
+                cnt++;
+        }
+        sum = values[7] + values[6] + values[5] + values[4];
+        printf("The sum of the last 4 elements is %.2f\n",sum);
+        printf("The largest value is %.2f\n",largest);
+        printf("The Total amount of value's greater than 19 is %d\n",greater);
+
+        return 0;
+}
+#include <stdio.h>
+
+int main()
+{
+        int cnt = 0, greater = 0;
+        float sum, largest = 0, values[7] = {78.50, 46.00, 78.50, 100.40, 12.00, 19.50, 19.55};
+
+        while (cnt < 7) {
+                if (values[cnt] > 19) {
+                  greater++;
+                }
+                cnt++;
+        }
+        while (cnt > 3) {
+                sum = sum + values[cnt];
+                cnt--;
+        }
+        for (cnt = 0; cnt <= 7; cnt++) {
+                largest = values[cnt];
+        }
+
+        printf("The sum of the last 4 elements is %.2f\n",sum);
+        printf("The largest value is %.2f\n",largest);
+        printf("The Total amount of value's greater than 19 is %d\n",greater);
+
+        return 0;
+}
+#include <stdio.h>
+
+int main()
+{
+        int cnt = 1, num, prod;
+
+        printf("Enter a number ");
+        scanf("%d", &num);
+
+        while (num < 1 or num > 12) {
+                printf("please enter a valid number ");
+                scanf("%d", &num);
+        }
+        while (cnt <= 12) {
+                prod = cnt * num;
+                printf("%d x %d = %d\n", num, cnt, prod);
+                cnt++;
+        }
+
+        return 0;
+}
+#include <stdio.h>
+
+int main()
+{
+        int array1[8] = {34, 56, 47, 47, 87, 87, 0, 45}, array2[8] = {14, 87, 24, 0, 0, 43, 112, 67}, init, cnt = 0;
+
+        while (cnt < 8 ) {
+                init = array1 [cnt];
+                array1 [cnt] = array2 [cnt];
+                array2 [cnt] = init;
+                cnt++;
+        }
+
+        cnt = 0;
+        printf("Array 1 is: ");
+        while (cnt < 8 ) {
+                printf("%d,",array1[cnt]);
+                cnt++;
+        }
+        cnt = 0;
+
+        printf("\nArray 2 is: ");
+
+        while (cnt < 8 ) {
+                printf("%d,",array2[cnt]);
+                cnt++;
+        }
+
+        return 0;
+}
+#include <stdio.h>
+
+int main()
+{
+        int cnt = 0, pos = 0, b[7]={23, 200, 19, -5, 27, 28, 19};
+        bool flag = false;
+
+        while (cnt < 7 && flag != true) {
+                if(b[cnt] < 0) {
+                        pos = cnt;
+                        flag = true;
+                }
+                cnt++;
+        }
+        if(flag == true) {
+                printf("first negative value is %d", pos);
+        }
+
+        return 0;
+}
+#include <stdio.h>
+
+int main()
+{
+        int cnt = 7, init, b[8]={23, 200, 19, -5, 27, 28, 19, 23};
+
+        init = b[7];
+        while (cnt > 0) {
+                b[cnt] = b[cnt-1];
+                cnt--;
+        }
+        b[0] = init;
+
+        cnt = 0;
+        while (cnt < 8 ) {
+                printf("%d,", b[cnt]);
+                cnt++;
+        }
+
+        return 0;
+}
+#include <stdio.h>
+
+int main()
+{
+        int cnt = 0, input, total = 0;
+
+        while (input < 43 or input > 53) {
+            printf("Enter  number between 43-53\n");
+            scanf("%d",&input);
+            cnt = input - 2;
+        }
+        while (cnt < 55) {
+            total = cnt + total;
+            cnt++;
+        }
+        printf("The total is %d\n", total);
+
+        return 0;
+}
+#include <stdio.h>
+
+int main()
+{
+        int array1[10] = {13, 14, 18, -9, 3, 14, 6, -7, 12, 14};
+        int array2[10] = {73, 74, 28, 4, 31, 4, 16, -8, 15, -4};
+        int array3[10] = {3};
+        int init, cnt = 0, cnt2 = 0;
+
+        while (cnt < 10 ) {
+                array3 [cnt + 1] = array3 [cnt] + 4;
+                cnt++;
+        }
+
+        cnt = 0;
+
+        while (cnt < 10 ) {
+                cnt2 = cnt;
+                init = array1[cnt];
+                while (cnt2 < 10) {
+                  if (array1[cnt2] > init) {
+                    init = array1 [cnt2];
+                    array1 [cnt2] = array1 [cnt];
+                    array1 [cnt] = init;
+                  }
+                  cnt2++;
+                }
+                cnt++;
+        }
+
+        cnt = 0;
+
+        while (cnt < 10 ) {
+                cnt2 = cnt;
+                init = array2[cnt];
+                while (cnt2 < 10) {
+                  if (array2[cnt2] > init) {
+                    init = array2 [cnt2];
+                    array2 [cnt2] = array2 [cnt];
+                    array2 [cnt] = init;
+                  }
+                  cnt2++;
+                }
+                cnt++;
+        }
+
+        cnt = 0;
+
+        while (cnt < 10 ) {
+                cnt2 = cnt;
+                init = array3[cnt];
+                while (cnt2 < 10) {
+                  if (array3[cnt2] > init) {
+                    init = array3 [cnt2];
+                    array3 [cnt2] = array3 [cnt];
+                    array3 [cnt] = init;
+                  }
+                  cnt2++;
+                }
+                cnt++;
+        }
+
+        cnt = 0;
+
+        printf("Array 1 is: ");
+        while (cnt < 10 ) {
+                printf("%d,",array1[cnt]);
+                cnt++;
+        }
+
+        cnt = 0;
+
+        printf("\nArray 2 is: ");
+        while (cnt < 10 ) {
+                printf("%d,",array2[cnt]);
+                cnt++;
+        }
+
+        cnt = 0;
+
+        printf("\nArray 3 is: ");
+
+        while (cnt < 10 ) {
+                printf("%d,",array3[cnt]);
+                cnt++;
+        }
+
+        return 0;
+}
+#include <stdio.h>
+
+int main()
+{
+        int array1[10] = {13, 14, 18, -9, 3, 14, 6, -7, 12, 14};
+        int array2[10] = {73, 74, 28, 4, 31, 4, 16, -8, 15, -4};
+        int array3[10] = {3};
+        int smol = 0, cnt = 0;
+
+        while (cnt < 10) {
+                array3[cnt] = smol;
+                smol+=4;
+                cnt++;
+        }
+
+
+        cnt = 10;
+
+        while (cnt >= 0) {
+                smol = array1[cnt];
+                if(array2[cnt] < smol) {
+                        smol = array2[cnt];
+                }
+                if(array3[cnt] < smol) {
+                        smol = array3[cnt];
+                }
+
+                printf("%d\t %d\t %d\t smallest value is %d\t\n", array1[cnt], array2[cnt], array3[cnt], smol);
+                cnt--;
+        }
+
+        return 0;
+}
+#include <stdio.h>
+
+int main()
+{
+        int atm = 1;
+        float balance = 100, trans = 0, totaltrans = 0;
+
+        while (atm != -1) {
+                printf("Please Select an option\n");
+                printf("1 for Withdraw \n2 For Deposit \n3 for current balance \n0 for Exit\n");
+                scanf("%d",&atm);
+                switch(atm) {
+                case 1:
+                        printf("Please Enter an Amount to Withdraw\n");
+                        scanf("%f", &trans);
+                        if ((trans + totaltrans) <= 400 && (balance - trans) >= 10) {
+                                totaltrans = trans + totaltrans;
+                                balance = balance - trans;
+                                printf("You Have Withdrawn $%.2f\n",trans);
+                        }
+                        else{
+                                printf("You have exceed your max withdrawl Amount\n");
+                        }
+                        break;
+                case 2:
+                        printf("Please Enter an Amount to Deposit\n");
+                        scanf("%f", &trans);
+                        balance = balance + trans;
+                        printf("You Have Deposited $%.2f\n",trans);
+                        break;
+                case 3:
+                        printf("Your Current Balance is $%.2f\n",balance);
+                        break;
+                case 0:
+                        printf("Thank You, Goodbye");
+                        atm = -1;
+                        break;
+                default:
+                        printf("Please enter valid input\n");
+                        break;
+                }
+        }
+
+        return 0;
+}
