@@ -1133,10 +1133,11 @@ int main()
         int atm = 1;
         float balance = 100, trans = 0, totaltrans = 0;
 
-        while (atm != -1) {
-                printf("Please Select an option\n");
-                printf("1 for Withdraw \n2 For Deposit \n3 for current balance \n0 for Exit\n");
-                scanf("%d",&atm);
+        printf("Please Select an option\n");
+        printf("1 for Withdraw \n2 For Deposit \n3 for current balance \n0 for Exit\n");
+        scanf("%d",&atm);
+
+        while (atm != 0) {
                 switch(atm) {
                 case 1:
                         printf("Please Enter an Amount to Withdraw\n");
@@ -1161,12 +1162,15 @@ int main()
                         break;
                 case 0:
                         printf("Thank You, Goodbye");
-                        atm = -1;
+                        atm = 0;
                         break;
                 default:
                         printf("Please enter valid input\n");
                         break;
                 }
+                printf("Please Select an option\n");
+                printf("1 for Withdraw \n2 For Deposit \n3 for current balance \n0 for Exit\n");
+                scanf("%d",&atm);
         }
 
         return 0;
