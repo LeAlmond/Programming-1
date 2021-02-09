@@ -4,14 +4,13 @@
 
 int main() {
 
-        int origin[5], values[5], cnt, cnt2, temp;
+        int values[5], cnt, cnt2, temp, search;
 
-        srand(time(0));
+        //srand(time(0));
 
         for (cnt = 0; cnt < 5; cnt++) {
 
                 values[cnt] = 10+rand() % 40;
-                origin[cnt] = values[cnt];
         }
 
         for (cnt = 0; cnt < 5; cnt++) {
@@ -25,11 +24,15 @@ int main() {
 
                }
 
-               printf("%d\t", origin[cnt]);
-               printf("%d\t", values[cnt]);
-               printf("%d\n",cnt );
+               printf("Enter a number to Search for....");
+               scanf("%d", &search);
 
-
+               for(cnt = 0; cnt < 5; cnt++) {
+                 if (search == values[cnt]) {
+                  printf("Number %d was found at position %d of the array\n",search, cnt );
+                  break;
+                 }
+               }
         }
 
         printf("\nThe largest Value is %d ", temp);
