@@ -1,0 +1,574 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <ctype.h>
+#include <time.h>
+
+//Patient Structure
+
+const char* patient_ex = "%-8d%-26s%-10s%-5d%-12s\n";
+
+struct pstruct {
+        int id;
+        char name[25];
+        int birth;
+        char condition[9];
+        char status[10];
+} pstruct;
+
+//Room Structure
+
+const char* room_ex = "\n%-4d%-11s%-5d%-7s%";
+
+struct rstruct {
+        int id;
+        char respirator[12];
+        int patients;
+        char staff[12];
+        int patientid[5];
+} rstruct;
+
+//ErrorCheck Function
+
+int errorcheck();
+
+//Add Patient Function's
+
+void addpatientID(struct pstruct *s);
+void addpatientname(struct pstruct *s);
+void addpatientbirth(struct pstruct *s);
+void addpatientcond(struct pstruct *s);
+void addpatientstat(struct pstruct *s);
+
+//Add Room Function's
+
+void addroomid(struct rstruct *s);
+void addroomres(struct rstruct *s);
+void addroombed(struct rstruct *s);
+void addroomstaff(struct rstruct *s);
+void addroompatient(struct rstruct *s,int i);
+void addroom();
+
+//Edit Patient Function's
+
+
+
+//Ai Room Assignment Function's
+
+
+
+//Full Function Call
+
+void addpatient();
+void addroom();
+void editpatient();
+void airoom();
+
+//Main Function
+
+int main()
+{
+        system("color 4f");
+
+        int selection = 0;
+
+        printf("Add a Patient \t\t 1\nAdd a Room \t\t 2\nEdit Patient Status  \t 3\nAi Room Assignment \t 4\n");
+        printf("--------------------------------\n");
+
+        while (selection == 0) {
+
+                printf("Please Select an Option: ");
+                selection = errorcheck();
+
+                switch (selection) {
+                case 1:
+                        addpatient();
+                        break;
+                case 2:
+                        addroom();
+                        break;
+                case 3:
+                        //editpatient();
+                        break;
+                case 4:
+                        //airoom();
+                        break;
+                default:
+                        selection = 0;
+                        printf("Invalid input entered\n");
+                        break;
+                }
+        }
+
+        return 0;
+}
+
+//ErrorCheck Function
+
+int errorcheck(){
+
+        int input;
+        int args = scanf("%d", &input);
+        if (args < 1)
+        {
+                // Display an error message
+                char clear;
+                scanf("%c", &clear); // eats a character off the buffer
+                input = 0;
+        }
+
+        return input;
+
+}
+
+//Add Patient Function's
+
+void addpatientID(struct pstruct *s){
+
+        s->id = 0;
+
+        srand(time(0));
+
+        int selection = 0;
+
+        printf("Would you Like to Enter or generate ID:\n");
+        printf("1 to Generate ID\n2 to Input ID\n-1 to Exit\n");
+        fflush(stdin);
+        scanf("%d", &selection);
+
+        switch (selection) {
+        case 1:
+                s->id = 999999+rand() % 9000000;
+                printf("%d",s->id);
+                break;
+        case 2:
+
+                while (s->id < 999999) {
+
+                        printf("\nPlease Enter Patient ID: ");
+
+                        //Check to ensure that Input is Integer
+
+                        s->id = errorcheck();
+
+                        if (s->id == -1) {
+                                break;
+                        }
+                        if (s->id > 9999999) {
+                                printf("Invalid ID\n");
+                                s->id = 0;
+                        }
+
+                }
+                break;
+        case -1:
+                s->id = selection;
+                break;
+        }
+
+        return;
+}
+
+void addpatientname(struct pstruct *s){
+
+        strcpy (s->name, "");
+
+        char firstname[25];/*, middlename[20], lastname[20];*/
+
+        printf("\nPlease Enter Patient Full Name: ");
+        fflush(stdin);
+        scanf("%[^\n]s",firstname);
+
+        /*printf("\nPlease Enter Patient First Name: ");
+           scanf("%s",firstname);
+
+           printf("\nPlease Enter Patient Middle Name: ");
+           scanf("%s",middlename);
+
+           printf("\nPlease Enter Patient Last Name: ");
+           scanf("%s",lastname);
+
+           firstname[0]=toupper(firstname[0]);
+           middlename[0]=toupper(middlename[0]);
+           lastname[0]=toupper(lastname[0]);*/
+
+        strcpy (s->name, firstname);
+        /*strcat (s->name, " ");
+           strcat (s->name, middlename);
+           strcat (s->name, " ");
+           strcat (s->name, lastname);
+           strcat (s->name, " ");*/
+
+        return;
+
+}
+
+void addpatientbirth(struct pstruct *s){
+
+        s->birth = 0;
+
+        int year;
+
+        time_t seconds=time(NULL);
+        struct tm* current_time=localtime(&seconds);
+
+        year = current_time->tm_year + 1900;
+
+        while (s->birth < 999) {
+                printf("\nPlease Enter Patient birth year: ");
+
+                //Check to ensure that Input is Integer
+                fflush(stdin);
+                s->birth = errorcheck();
+
+                if (s->birth == -1) {
+                        break;
+                }
+                if (s->birth > year || s->birth < 999) {
+                        printf("Invalid Birth Year\n");
+                        s->birth = 0;
+                }
+        }
+        return;
+
+}
+
+void addpatientcond(struct pstruct *s){
+
+        strcpy (s->condition, "");
+
+        int selection = 0;
+
+        printf("--------------------------------\n");
+        printf("status: None\t\t 1\nstatus: Mild \t\t 2\nstatus: Average \t 3\n");
+        printf("status: Severe\t\t 4\nstatus: Critical\t 5\n");
+        printf("--------------------------------\n");
+
+        while (selection == 0) {
+                printf("\nPlease Enter Patient covid condition: ");
+
+                fflush(stdin);
+                selection = errorcheck();
+
+                switch (selection) {
+                case 1:
+                        strcpy(s->condition, "None");
+                        break;
+                case 2:
+                        strcpy(s->condition, "Mild");
+                        break;
+                case 3:
+                        strcpy(s->condition, "Average");
+                        break;
+                case 4:
+                        strcpy(s->condition, "Severe");
+                        break;
+                case 5:
+                        strcpy(s->condition, "Critical");
+                        break;
+                default:
+                        selection = 0;
+                        printf("Invalid input entered\n");
+                        break;
+                }
+        }
+
+        return;
+
+}
+
+void addpatientstat(struct pstruct *s){
+
+        strcpy (s->status, "");
+
+        int selection = 0;
+
+        printf("--------------------------------\n");
+        printf("status: Admitted\t 1\nstatus: Discharged\t 2\n");
+        printf("--------------------------------\n");
+
+        while (selection == 0) {
+                printf("\nPlease Enter Patient Admission Status: ");
+
+                fflush(stdin);
+                selection = errorcheck();
+
+                switch (selection) {
+                case 1:
+                        strcpy(s->status, "admitted");
+                        break;
+                case 2:
+                        strcpy(s->status, "Discharged");
+                        break;
+                default:
+                        selection = 0;
+                        printf("Invalid input entered\n");
+                        break;
+                }
+        }
+
+        return;
+
+}
+
+void addpatient(){
+
+
+        struct pstruct s,*p;
+        p = &s;
+
+        s.id = 0;
+        s.birth = 0;
+
+        p = &s;
+
+        FILE *patient;
+
+        if (patient = fopen ("./patient.txt", "r")) {
+                fclose(patient);
+                patient = fopen ("./patient.txt", "a");
+        } else {
+                fclose(patient);
+                patient = fopen ("./patient.txt", "a");
+                fprintf(patient,"\nPatient ID\tPatient Name\tCondition   Birth Status\n");
+        }
+
+        addpatientID(p);
+
+        while(s.id != -1) {
+
+                addpatientname(p);
+                addpatientcond(p);
+                addpatientbirth(p);
+                addpatientstat(p);
+                fprintf(patient,patient_ex,s.id,s.name,s.condition,s.birth,s.status);
+                addpatientID(p);
+                if (p->id == -1) {
+                        break;
+                }
+
+        }
+
+        fclose(patient);
+
+        return;
+}
+
+//Add Room Function's
+
+void addroomid(struct rstruct *s){
+
+        s->id = 0;
+
+        srand(time(0));
+
+        int selection = 0;
+
+        printf("Would you Like to Enter or generate ID:\n");
+        printf("1 to Generate ID\n2 to Input ID\n-1 to Exit\n");
+        fflush(stdin);
+        scanf("%d", &selection);
+
+        switch (selection) {
+        case 1:
+                s->id = 99+rand() % 900;
+                printf("%d\n",s->id);
+                break;
+        case 2:
+                while (s->id < 99) {
+
+                        printf("\nPlease Enter Room ID: ");
+
+                        //Check to ensure that Input is Integer
+
+                        s->id = errorcheck();
+
+                        if (s->id == -1) {
+                                break;
+                        }
+                        if (s->id > 999) {
+                                printf("Invalid ID\n");
+                                s->id = 0;
+                        }
+
+                }
+                break;
+        case -1:
+                s->id = selection;
+                break;
+        }
+
+        return;
+}
+
+void addroomres(struct rstruct *s){
+
+        strcpy (s->respirator, "");
+
+        int selection = 0;
+
+        printf("--------------------------------\n");
+        printf("equipmet: None\t\t 1\nequipmet: Respirator \t 2\n");
+        printf("--------------------------------\n");
+
+        while (selection == 0) {
+                printf("\nPlease Enter Patient covid condition: ");
+
+                fflush(stdin);
+                selection = errorcheck();
+
+                switch (selection) {
+                case 1:
+                        strcpy(s->respirator, "None");
+                        break;
+                case 2:
+                        strcpy(s->respirator, "Respirator");
+                        break;
+
+                default:
+                        selection = 0;
+                        printf("Invalid input entered\n");
+                        break;
+                }
+        }
+
+        return;
+
+}
+
+void addroombed(struct rstruct *s){
+
+        s->patients = 0;
+
+        printf("How Many Beds are in The Room:\n");
+        fflush(stdin);
+
+        while (s->patients < 1) {
+
+                s->patients = errorcheck();
+
+                if (s->patients > 5) {
+                        printf("Invalid Amount\n");
+                        s->patients = 0;
+                }
+        }
+
+        return;
+}
+
+void addroomstaff(struct rstruct *s){
+
+        strcpy (s->staff, "");
+
+        int selection = 0;
+
+        printf("\n--------------------------------\n");
+        printf("Staff: None\t\t 1\nStaff: Nurse \t\t 2\nStaff: Doctor \t\t 3\n");
+        printf("--------------------------------\n");
+
+        while (selection == 0) {
+                printf("\nPlease Select Staff: ");
+
+                fflush(stdin);
+                selection = errorcheck();
+
+                switch (selection) {
+                case 1:
+                        strcpy(s->staff, "None");
+                        break;
+                case 2:
+                        strcpy(s->staff, "Nurse");
+                        break;
+                case 3:
+                        strcpy(s->staff, "Doctor");
+                        break;
+
+                default:
+                        selection = 0;
+                        printf("Invalid input entered\n");
+                        break;
+                }
+        }
+
+        return;
+
+}
+
+void addroompatient(struct rstruct *s,int i){
+
+        s->patientid[i] = 0;
+
+        fflush(stdin);
+
+        while (s->patientid[i] < 999999) {
+
+                printf("\nPlease Enter Patient ID[%d]: ",i+1);
+
+                //Check to ensure that Input is Integer
+
+                s->patientid[i] = errorcheck();
+
+                if (s->patientid[i] == -1) {
+                        break;
+                }
+                if (s->patientid[i] > 9999999) {
+                        printf("Invalid ID\n");
+                        s->patientid[i] = 0;
+                }
+
+        }
+
+        return;
+}
+
+void addroom(){
+
+
+        struct rstruct s,*p;
+        p = &s;
+
+        s.id = 0;
+        s.patients = 0;
+
+        p = &s;
+
+        FILE *room;
+
+        if (room = fopen ("./room.txt", "r")) {
+                fclose(room);
+                room = fopen ("./room.txt", "a");
+        } else {
+                fclose(room);
+                room = fopen ("./room.txt", "a");
+                fprintf(room,"\nID  Respirator Beds Staff\tPatients\n");
+        }
+
+        addroomid(p);
+
+        while(s.id != -1) {
+
+                addroomres(p);
+                addroombed(p);
+                addroomstaff(p);
+                printf("How many Patients: ");
+                int num = 0;
+                scanf("%d",&num);
+                for (int i = 0; i < num; i++) {
+                        addroompatient(p, i);
+                }
+                fprintf(room,room_ex,s.id,s.respirator,s.patients,s.staff);
+                for (int i = 0; i < num; i++) {
+                        fprintf(room,"%d,",s.patientid[i]);
+                }
+                fprintf(room,"\n");
+                addroomid(p);
+                if (p->id == -1) {
+                        break;
+                }
+
+        }
+
+        fclose(room);
+
+        return;
+}

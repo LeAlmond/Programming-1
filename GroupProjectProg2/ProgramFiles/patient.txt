@@ -1,0 +1,11 @@
+Patient ID    Patient Name    Condition   Birth Status
+1004877 Gabriel      Tickle       Critical  2001 admitted
+1004903 Leondre      Bromfield    Average   2000 admitted
+1004949 Ashley       Deans        Critical  2002 admitted
+1004982 Henry        Jason        Mild      2005 admitted
+1034877 Gabriel      Tickle       Severe    2001 admitted
+1013993 William      Genny        Severe    1978 admitted
+1014036 Maryck       Brown        Average   1966 admitted
+1014071 Jethrow      Walkley      Critical  1978 admitted
+1015335 Random       Dude         Mild      1956 admitted    
+1000986 Imani        Peterkin     Average   2000 Discharged  

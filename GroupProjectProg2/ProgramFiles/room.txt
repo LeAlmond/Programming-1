@@ -1,0 +1,12 @@
+ID  Respirator Beds Staff	Patients
+569 Respirator 4    None   2512128,4219201,6422248,2375680,
+719 Respirator 5    Doctor 9999999,4219201,6422248,2945024,
+100 None       5    None   2151761,1361236,
+321 None       3    Doctor 1231231,1321231,2151251,2162437,
+385 Respirator 4    Doctor 1209785,
+129 Respirator 4    Doctor 2512612,
+843 Respirator 2    Doctor 2151515,1251522,
+795 Respirator 1    None
+821 Respirator 2    Doctor
+600 Respirator 3    Doctor
+623 None       5    Nurse

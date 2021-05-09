@@ -1,0 +1,50 @@
+The Program created was designed to
+
+	1. Create and add Patients to a file
+	2. Create and add Rooms to a file
+	3. Edit Patients from the previously created patient file
+	4. Automatically admit, discharge and assign patients to a room
+	5. Create a file with a report showing the ages of patients admitted
+	6. Create a file with a report showing the condition of patients admitted
+	7. Create a file with the current addmited patients, relevant information and there current room
+
+There are a few main constants defined at the start of the code.
+
+	#define MAXPATIENT 35 
+		// constant to define max amount of patients
+	#define MAXROOM 21 
+		// constant to define max amount of rooms
+
+	#define PATIENT_EX "%-8d%-13s%-13s%-10s%-5d%-12s\n" 
+		// the format to export the patient struct
+	#define PATIENT_IN "%d %s %s %s %d %s" 
+		// the format to accept the patient struct
+
+	#define ROOM_EX "\n%-4d%-11s%-5d%-7s%" 
+		// the format to export the room struct excluding patient id's
+	#define ROOM_IN "%d% s% d% s%" 
+		// the format to accept the room struct excluding patient id's
+
+There are two main structs defined at the start of the code as well
+
+
+//The Patient Structure which stores the following
+
+struct pstruct {
+        int id; //The ID Number
+        char fname[12]; //The First Name
+        char lname[12]; //The Last Name
+        int birth; //The Date of Birth
+        char condition[9]; //The Covid Condition
+        char status[10]; //The Admitance Status
+} pstruct;
+
+//The Room Structure which stores the following
+
+struct rstruct {
+        int id; //The room ID Number
+        char respirator[12]; //Respirator Status
+        int patients; //Amount of beds
+        char staff[12]; //Type of Staff assigned
+        int patientid[5]; //Array for patient ID Number's
+} rstruct;

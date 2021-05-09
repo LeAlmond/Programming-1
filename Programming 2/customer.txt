@@ -1,0 +1,5 @@
+Name:     gabe      Account number: 2098           Starting Balance: $900.00         Closing Balance: $100.00         Amount Deposited: $1500.00        Amount Withdrawn: $2300.00        
+Name:     witney    Account number: 2152           Starting Balance: $789.00         Closing Balance: $666.00         Amount Deposited: $90.00          Amount Withdrawn: $213.00         
+Name:     helix     Account number: 9123           Starting Balance: $6709.00        Closing Balance: $6771.00        Amount Deposited: $313.00         Amount Withdrawn: $251.00         
+Name:     harley    Account number: 2431           Starting Balance: $1616712.00     Closing Balance: $1445492.00     Amount Deposited: $31.00          Amount Withdrawn: $171251.00      
+Name:     nichy     Account number: 2131           Starting Balance: $612.00         Closing Balance: $1609.00        Amount Deposited: $1231.00        Amount Withdrawn: $234.00         

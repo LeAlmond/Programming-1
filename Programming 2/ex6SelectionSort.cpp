@@ -4,50 +4,65 @@
 
 int main() {
 
-        int values[5], cnt, cnt2, temp, search, min;
+        int array[21], Index, SecInd, cur_num, search;
 
         srand(time(0));
 
-        for (cnt = 0; cnt < 5; cnt++) {
+        for (Index = 0; Index < 21; Index++) {
 
-                values[cnt] = 10+rand() % 40;
-        }
+                array[Index] = 6 + rand()% 7*5;
 
-        for (cnt = 0; cnt < 5; cnt++) {
+                cur_num = array[Index];
 
-                temp = values[cnt];
-
-                for (cnt2 = cnt; cnt2 < 5; cnt2++) {
-
-                        (values[cnt2] > values[cnt]) ? temp = values[cnt2], values[cnt2] = values[cnt]: temp = temp;
-                        values[cnt] = temp;
-
+                if (array[Index-1]<=cur_num) {
+                  array[Index] = cur_num;
+                  continue;
                 }
 
-                printf("%d\t", values[cnt]);
-                printf("%d\n",cnt );
+
+        }
+
+        for (Index = 0; Index < 21; Index++) {
+
+                printf("%d\t", array[Index]);
+                printf("%d\n",Index );
 
         }
 
         printf("Enter a number to Search for....");
         scanf("%d", &search);
 
-        if (search > values[2]) {
-                cnt2 = 1;
-                cnt = 0;
-        }
-        else {
-                cnt2 = 4;
-                cnt = 2;
+        for (Index = 0; Index < 21; Index++) {
+
+                cur_num = array[Index];
+
+                for (SecInd = Index; SecInd < 21; SecInd++) {
+
+                        (array[SecInd] > array[Index]) ? cur_num = array[SecInd], array[SecInd] = array[Index]: cur_num = cur_num;
+                        array[Index] = cur_num;
+
+                }
+                printf("%d\t", array[Index]);
         }
 
-        while (cnt <= cnt2) {
-          if (search == values[cnt]) {
-                  printf("Found search variable inbetween array values %d and %d\n", cnt, cnt2 );
-                  printf("Number %d was found at position %d of the array\n",search, cnt );
+        printf("\n");
+
+        if (search > array[11]) {
+                SecInd = 10;
+                Index = 0;
+        }
+        else {
+                SecInd = 21;
+                Index = 11;
+        }
+
+        while (Index <= SecInd) {
+          if (search == array[Index]) {
+                  printf("Found search variable inbetween array array %d and %d\n", SecInd-10, SecInd );
+                  printf("Number %d was found at position %d of the array\n",search, Index );
                   break;
           }
-          cnt++;
+          Index++;
         }
 
         return 0;

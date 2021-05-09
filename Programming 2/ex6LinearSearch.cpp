@@ -10,7 +10,7 @@ int main() {
 
         for (cnt = 0; cnt < 5; cnt++) {
 
-                values[cnt] = 10+rand() % 40;
+                values[cnt] = rand()%11+1;
         }
 
         for (cnt = 0; cnt < 5; cnt++) {
