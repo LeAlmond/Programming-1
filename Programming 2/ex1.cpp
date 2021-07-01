@@ -9,7 +9,7 @@ Use a module called smallest to output the smallest number in the array.
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <time.h>
+#include <time.h>#
 //The function is declared/ prototype
 int rannum(int a[]);
 int smallest(int b[]);
